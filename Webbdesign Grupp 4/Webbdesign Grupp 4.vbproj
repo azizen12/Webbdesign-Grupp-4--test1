@@ -92,7 +92,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HtmlPage1.html" />
+    <Content Include="Home.html" />
     <Content Include="JavaScript.js" />
     <Content Include="OmOss.html" />
     <Content Include="styles.css" />
