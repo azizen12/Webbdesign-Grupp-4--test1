@@ -1,0 +1,73 @@
+﻿/* simple-style.css */
+
+:root {
+    --bg-color: #ff6a00;
+    --nav-bg: #e3cccc;
+    --text-color: #333333;
+    --main-bg: #936606;
+    --header-bg: #09644f; /* Dark Navy */
+    --header-text: #ffffff; /* White text for contrast */
+    --accent-color: #3498db; /* Bright Blue */
+    --max-width: 800px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0; /* Removed margin to let header hit the edges */
+    padding: 0;
+}
+
+main  {
+    padding: 10px;
+    line-height: 1.0;
+    margin: auto;
+}
+
+p {
+    line-height: 1.0;
+    margin-bottom: 0; /* Ändra från 1em till 0 */
+    margin-top: 0; /* För säkerhets skull, nollställ även toppen */
+}
+
+/* The New Header Section */
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+    /* Center the content inside the header and main */
+    header .container {
+        display: flex;
+        justify-content: flex-start; /* default */
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+nav {
+    background-color: var(--nav-bg);
+    padding: 10px 0;
+    border-bottom: 3px solid #3498db;
+}
+
+    nav .container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 1rem;
+    }
+
