@@ -1,13 +1,15 @@
+import { createEl } from '../utils/dom.js';
+
 class SiteHeader extends HTMLElement {
     connectedCallback() {
         SiteHeader._injectStyles();
-        this.innerHTML = `
-            <header>
-                <div class="container">
-                    <h1>Gr4 Plantschool</h1>
-                </div>
-            </header>
-        `;
+        this.replaceChildren(
+            createEl('header', {},
+                createEl('div', { className: 'container' },
+                    createEl('h1', {}, 'Gr4 Plantschool'),
+                ),
+            ),
+        );
     }
 
     static _injectStyles() {

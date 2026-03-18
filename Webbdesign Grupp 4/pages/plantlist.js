@@ -1,12 +1,12 @@
+import { createEl } from '../utils/dom.js';
+
 export default function render() {
-    return `
-        <div class="container">
-            <article>
-                <h2>Plant List</h2>
-                <section>
-                    <p>Coming soon...</p>
-                </section>
-            </article>
-        </div>
-    `;
+    return createEl('div', { className: 'container' },
+        createEl('article', {},
+            createEl('h2', {}, 'Plant List'),
+            createEl('section', {},
+                createEl('p', {}, 'Coming soon...'),
+            ),
+        ),
+    );
 }

@@ -25,7 +25,8 @@ function navigate() {
     const key = window.location.hash.slice(1) || 'home';
     const page = routes[key] ?? routes.home;
     setPageStyles(key);
-    document.querySelector('main').innerHTML = page();
+    const main = document.querySelector('main');
+    main.replaceChildren(page());
 }
 
 window.addEventListener('hashchange', navigate);

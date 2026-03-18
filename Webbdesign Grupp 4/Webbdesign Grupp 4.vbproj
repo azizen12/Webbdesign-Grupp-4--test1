@@ -110,6 +110,7 @@
     <Content Include="pages\season.js" />
     <Content Include="router.js" />
     <Content Include="styles.css" />
+    <Content Include="utils\dom.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

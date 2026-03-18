@@ -1,14 +1,16 @@
+import { createEl } from '../utils/dom.js';
+
 class SiteFooter extends HTMLElement {
     connectedCallback() {
         SiteFooter._injectStyles();
-        this.innerHTML = `
-            <footer>
-                <div class="container">
-                    <p>&copy; 2026 Gr4 Plantschool.</p>
-                    <p>www.hb.se</p>
-                </div>
-            </footer>
-        `;
+        this.replaceChildren(
+            createEl('footer', {},
+                createEl('div', { className: 'container' },
+                    createEl('p', {}, '© 2026 Gr4 Plantschool.'),
+                    createEl('p', {}, 'www.hb.se'),
+                ),
+            ),
+        );
     }
 
     static _injectStyles() {

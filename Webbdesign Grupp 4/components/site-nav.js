@@ -1,3 +1,5 @@
+import { createEl } from '../utils/dom.js';
+
 class SiteNav extends HTMLElement {
     constructor() {
         super();
@@ -14,15 +16,18 @@ class SiteNav extends HTMLElement {
             { key: 'aboutus',   href: '#aboutus',    label: 'About us' },
         ];
 
+        const active = this._activeKey();
         const items = links.map(({ key, href, label }) =>
-            `<li><a href="${href}"${key === this._activeKey() ? ' class="active"' : ''}>${label}</a></li>`
-        ).join('');
+            createEl('li', {},
+                createEl('a', { href, ...(key === active ? { className: 'active' } : {}) }, label),
+            )
+        );
 
-        this.innerHTML = `
-            <nav aria-label="Huvudmeny">
-                <ul>${items}</ul>
-            </nav>
-        `;
+        this.replaceChildren(
+            createEl('nav', { 'aria-label': 'Huvudmeny' },
+                createEl('ul', {}, ...items),
+            ),
+        );
 
         window.addEventListener('hashchange', this._onHashChange);
     }
