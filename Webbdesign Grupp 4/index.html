@@ -5,46 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gr4 Plantschool - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="components/site-header.js"></script>
+    <script type="module" src="components/site-nav.js"></script>
+    <script type="module" src="components/site-footer.js"></script>
+    <script type="module" src="router.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Gr4 Plantschool</h1>
-        </div>
-    </header>
-
-    <nav aria-label="Huvudmeny">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="season.html">Season</a></li>
-            <li><a href="plantlist/index.html">Plant List</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-        </ul>
-    </nav>
-
-
-
-    <main>
-        <div class="container">
-            <article>
-                <h2>Welcome!</h2>
-                <section>
-                    <p>This is a page regarding all kinds of information and help about growing your own plants.</p>
-                    <p>We got sections about seasonal plants as well as a catalogue of plants</p>
-                    <p>We hope that you will enjoy your visit</p>
-                </section>
-            </article>
-
-            <img src="img/image1.png" alt="A beautiful sunflower in a garden" width="500">
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Gr4 Plantschool. </p>
-            <p>www.hb.se</p>
-        </div>
-    </footer>
+    <site-header></site-header>
+    <site-nav></site-nav>
+    <main></main>
+    <site-footer></site-footer>
 </body>
 </html>
