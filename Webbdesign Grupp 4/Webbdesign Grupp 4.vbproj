@@ -92,11 +92,24 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="components\site-footer.css" />
+    <Content Include="components\site-footer.js" />
+    <Content Include="components\site-header.css" />
+    <Content Include="components\site-header.js" />
+    <Content Include="components\site-nav.css" />
+    <Content Include="components\site-nav.js" />
     <Content Include="index.html" />
     <Content Include="JavaScript.js" />
-    <Content Include="aboutus.html" />
+    <Content Include="pages\aboutus.css" />
+    <Content Include="pages\aboutus.js" />
+    <Content Include="pages\home.css" />
+    <Content Include="pages\home.js" />
+    <Content Include="pages\plantlist.css" />
+    <Content Include="pages\plantlist.js" />
+    <Content Include="pages\season.css" />
+    <Content Include="pages\season.js" />
+    <Content Include="router.js" />
     <Content Include="styles.css" />
-    <Content Include="season.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
