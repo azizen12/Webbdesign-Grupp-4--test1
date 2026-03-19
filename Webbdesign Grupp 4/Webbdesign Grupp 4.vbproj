@@ -95,6 +95,9 @@
     <Content Include="index.html" />
     <Content Include="JavaScript.js" />
     <Content Include="aboutus.html" />
+    <Content Include="seasons\autumn\autumn.html" />
+    <Content Include="seasons\spring\spring.html" />
+    <Content Include="seasons\summer\summer.html" />
     <Content Include="styles.css" />
     <Content Include="season.html" />
     <Content Include="Web.config" />
@@ -146,6 +149,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
